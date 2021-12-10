@@ -4,7 +4,7 @@ import Countries from './components/Countries/Countries';
 
 function App() {
   return (
-    <div className="App">
+    <div>
     <Countries></Countries>
      
     </div>

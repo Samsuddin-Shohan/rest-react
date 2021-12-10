@@ -1,0 +1,10 @@
+.country {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: paleturquoise;
+  border: 2px solid orangered;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}

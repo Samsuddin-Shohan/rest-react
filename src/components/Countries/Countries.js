@@ -10,7 +10,11 @@ const Countries = () => {
     },[]);
     return (
         <div>
-           <h1>Hello Countries {countries.length}</h1>
+           <h1>There are {countries.length} in the world</h1>
+           {
+               countries.map(country => <Country name = {country.name.common} area = {country.area}
+                population = {country.population}></Country>)
+           }
         </div>
     );
 };
