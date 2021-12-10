@@ -2,11 +2,14 @@ import React from 'react';
 import './Country.css'
 
 const Country = (props) => {
-    console.log(props);
+    console.log(props.country);
+   
+    const { name,flags,area,population } = props.country;
     return (
         <div className='country'>
-           <h3>Country Name: {props.name}</h3>
-           <p>Area is {props.area} & popoulation is {props.population}</p>
+            <img src={flags.png} alt="" />
+           <h3>Country Name: {name.common}</h3>
+           <p>Area is {area} & popoulation is {population}</p>
         </div>
     );
 };
